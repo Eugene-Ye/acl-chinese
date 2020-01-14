@@ -480,7 +480,7 @@ Dylan 是 Common Lisp 与 Scheme 的混合物，有着 Pascal 一般的语法。
 
 这代表着 ``compose`` 的最后一个实参，可以是任意长度，但其它函数只能接受一个实参。
 
-下面我们建构了一个函数，先给取参数的平方根，取整后再放回列表里，接著返回:
+下面我们建构了一个函数，先给取参数的平方根，取整后再放回列表里，接着返回:
 
 ::
 
@@ -500,7 +500,7 @@ Dylan 是 Common Lisp 与 Scheme 的混合物，有着 Pascal 一般的语法。
 
   > (mapcar (conjoin #'integerp #'symbolp)
             '(a "a" 2 3))
-  (NIL NIL NIL T)
+  (NIL NIL NIL NIL)
 
 若考虑将谓词定义成集合， ``disjoin`` 返回传入参数的联集（union），而 ``conjoin`` 则是返回传入参数的交集（intersection）。
 
